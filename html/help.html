@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP</title>
+    <style>
+        .grid-container{
+            grid-gap: 5px;
+            background-color: #6e9ec5;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .grid-container .item3{
+            background-color: rgb(248, 248, 250);
+            padding: 5px;
+            margin-left: 215px;
+            border-radius: 10px 0px 0px 10px;
+            margin-top: -623px;
+        }
+        .grid-container .item2{
+            width: 165px;
+            background-color: #6e9ec5;
+            text-align: left;
+            padding: 5px;
+            color: white;
+        }
+        .item3 .ibody{
+            height: 545px;
+            overflow-y: scroll;
+            display: block;
+            padding-right: 10px;
+        }
+        .item3 h2{
+            display: block;
+        }
+        .menuIcon:hover{
+            color: #2c485f;
+        }
+    </style>
+    <script>
+        function load(){
+        document.getElementById("menuTitle").innerHTML="HELP";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+        }
+        function HomeHover(){
+            if(document.getElementById("btnAbout").style.color=='white'){
+            document.getElementById("btnHome").style.color= '#2c485f';
+            document.getElementById("btnHome").innerHTML="| HOME";
+            document.getElementById("btnHome").style.cursor= 'pointer';
+            }
+            else{
+                document.getElementById("btnHome").style.cursor= 'default';
+            }
+        }
+        function HomeLeave(){
+            if(document.getElementById("btnAbout").style.color=='white'){
+            document.getElementById("btnHome").style.color= 'white';
+            document.getElementById("btnHome").innerHTML="HOME";
+            document.getElementById("btnHome").style.cursor= 'default';
+            }
+        }
+        function HomeClick(){
+            if((document.getElementById("menuTitle").innerHTML!="HOME")&&(document.getElementById("btnHome").innerHTML=="| HOME")){
+            document.getElementById("menuTitle").innerHTML="HOME";
+            document.getElementById("btnHome").innerHTML="HOME";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+            window.location.replace("home.html");
+        }
+        }
+        function AboutHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnAbout").style.color= '#2c485f';
+            document.getElementById("btnAbout").innerHTML="| ABOUT";
+            document.getElementById("btnAbout").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnAbout").style.cursor= 'default';
+            }
+        }
+        function AboutLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnAbout").style.color= 'white';
+            document.getElementById("btnAbout").innerHTML="ABOUT";
+        }
+    }
+        function AboutClick(){
+            if((document.getElementById("menuTitle").innerHTML!="ABOUT")&&(document.getElementById("btnAbout").innerHTML=="| ABOUT")){
+            document.getElementById("menuTitle").innerHTML="ABOUT";
+            document.getElementById("btnAbout").innerHTML="ABOUT";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+            
+            //window.location.href="about.html";
+            window.location.replace("about.html");
+        }
+        }
+        function AdminHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnAdmin").style.color= '#2c485f';
+            document.getElementById("btnAdmin").innerHTML="| ADMIN";
+            document.getElementById("btnAdmin").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnAdmin").style.cursor= 'default';
+            }
+        }
+        function AdminLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnAdmin").style.color= 'white';
+            document.getElementById("btnAdmin").innerHTML="ADMIN";
+            }
+        }
+        function AdminClick(){
+            if((document.getElementById("menuTitle").innerHTML!="ADMIN")&&(document.getElementById("btnAdmin").innerHTML=="| ADMIN")){
+            document.getElementById("menuTitle").innerHTML="ADMIN";
+            document.getElementById("btnAdmin").innerHTML="ADMIN";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+            window.location.replace("Admin/Alogin.html");
+        }
+        }
+        function DirectorHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnDirector").style.color= '#2c485f';
+            document.getElementById("btnDirector").innerHTML="| DIRECTOR";
+            document.getElementById("btnDirector").style.cursor= 'pointer';
+        }
+        else{
+                document.getElementById("btnDirector").style.cursor= 'default';
+            }
+        }
+        function DirectorLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnDirector").style.color= 'white';
+            document.getElementById("btnDirector").innerHTML="DIRECTOR";
+        }
+        }
+        function DirectorClick(){
+            if((document.getElementById("menuTitle").innerHTML!="DIRECTOR")&&(document.getElementById("btnDirector").innerHTML=="| DIRECTOR")){
+            document.getElementById("menuTitle").innerHTML="DIRECTOR";
+            document.getElementById("btnDirector").innerHTML="DIRECTOR";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Director/Dlogin.html");
+        }
+        }
+        function UsersHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnUsers").style.color= '#2c485f';
+            document.getElementById("btnUsers").innerHTML="| USERS";
+            document.getElementById("btnUsers").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnUsers").style.cursor= 'default';
+            }
+        }
+        function UsersLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnUsers").style.color= 'white';
+            document.getElementById("btnUsers").innerHTML="USERS";
+        }
+    }
+        function UsersClick(){
+            if((document.getElementById("menuTitle").innerHTML!="USERS")&&(document.getElementById("btnUsers").innerHTML=="| USERS")){
+            document.getElementById("menuTitle").innerHTML="USERS";
+            document.getElementById("btnUsers").innerHTML="USERS";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Users/Ulogin.html");
+        }
+        }
+        function DoctorHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnDoctor").style.color= '#2c485f';
+            document.getElementById("btnDoctor").innerHTML="| DOCTOR";
+            document.getElementById("btnDoctor").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnDoctor").style.cursor= 'default';
+            }
+        }
+        function DoctorLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnDoctor").style.color= 'white';
+            document.getElementById("btnDoctor").innerHTML="DOCTOR";
+        }
+    }
+        function DoctorClick(){
+            if((document.getElementById("menuTitle").innerHTML!="DOCTOR")&&(document.getElementById("btnDoctor").innerHTML=="| DOCTOR")){
+            document.getElementById("menuTitle").innerHTML="DOCTOR";
+            document.getElementById("btnDoctor").innerHTML="DOCTOR";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Doctor/Dlogin.html");
+        }
+        }
+        function LabHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnLab").style.color= '#2c485f';
+            document.getElementById("btnLab").innerHTML="| LAB-TECH";
+            document.getElementById("btnLab").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnLab").style.cursor= 'default';
+            }
+        }
+        function LabLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnLab").style.color= 'white';
+            document.getElementById("btnLab").innerHTML="LAB-TECH";
+        }
+    }
+        function LabClick(){
+            if((document.getElementById("menuTitle").innerHTML!="LAB-TECH")&&(document.getElementById("btnLab").innerHTML=="| LAB-TECH")){
+            document.getElementById("menuTitle").innerHTML="LAB-TECH";
+            document.getElementById("btnLab").innerHTML="LAB-TECH";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Lab/Llogin.html");
+        }
+        }
+        function PharmaHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnPharma").style.color= '#2c485f';
+            document.getElementById("btnPharma").innerHTML="| PHARMACY";
+            document.getElementById("btnPharma").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnPharma").style.cursor= 'default';
+            }
+        }
+        function PharmaLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnPharma").style.color= 'white';
+            document.getElementById("btnPharma").innerHTML="PHARMACY";
+        }
+    }
+        function PharmaClick(){
+            if((document.getElementById("menuTitle").innerHTML!="PHARMACY")&&(document.getElementById("btnPharma").innerHTML=="| PHARMACY")){
+            document.getElementById("menuTitle").innerHTML="PHARMACY";
+            document.getElementById("btnPharma").innerHTML="PHARMACY";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Pharma/Plogin.html");
+        }
+        }
+        function NurseHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnNurse").style.color= '#2c485f';
+            document.getElementById("btnNurse").innerHTML="| NURSE";
+            document.getElementById("btnNurse").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnNurse").style.cursor= 'default';
+            }
+        }
+        function NurseLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnNurse").style.color= 'white';
+            document.getElementById("btnNurse").innerHTML="NURSE";
+        }
+    }
+        function NurseClick(){
+            if((document.getElementById("menuTitle").innerHTML!="NURSE")&&(document.getElementById("btnNurse").innerHTML=="| NURSE")){
+            document.getElementById("menuTitle").innerHTML="NURSE";
+            document.getElementById("btnNurse").innerHTML="NURSE";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Nurse/Nlogin.html");
+        }
+        }
+        function ReckHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnReck").style.color= '#2c485f';
+            document.getElementById("btnReck").innerHTML="| RECKONER";
+            document.getElementById("btnReck").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnReck").style.cursor= 'default';
+            }
+        }
+        function ReckLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnReck").style.color= 'white';
+            document.getElementById("btnReck").innerHTML="RECKONER";
+        }
+    }
+        function ReckClick(){
+            if((document.getElementById("menuTitle").innerHTML!="RECKONER")&&(document.getElementById("btnReck").innerHTML=="| RECKONER")){
+            document.getElementById("menuTitle").innerHTML="RECKONER";
+            document.getElementById("btnReck").innerHTML="RECKONER";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("Reck/Rlogin.html");
+        }
+        }
+        function HelpHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnHelp").style.color= '#2c485f';
+            document.getElementById("btnHelp").innerHTML="| HELP";
+            document.getElementById("btnHelp").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnHelp").style.cursor= 'default';
+            }
+        }
+        function HelpLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnHelp").style.color= 'white';
+            document.getElementById("btnHelp").innerHTML="HELP";
+        }
+    }
+        function HelpClick(){
+            if((document.getElementById("menuTitle").innerHTML!="HELP")&&(document.getElementById("btnHelp").innerHTML=="| HELP")){
+            document.getElementById("menuTitle").innerHTML="HELP";
+            document.getElementById("btnHelp").innerHTML="HELP";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+        }
+        }
+        function DonationHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnDonation").style.color= '#2c485f';
+            document.getElementById("btnDonation").innerHTML="| DONATION";
+            document.getElementById("btnDonation").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnDonation").style.cursor= 'default';
+            }
+        }
+        function DonationLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnDonation").style.color= 'white';
+            document.getElementById("btnDonation").innerHTML="DONATION";
+        }
+    }
+        function DonationClick(){
+            if((document.getElementById("menuTitle").innerHTML!="DONATION")&&(document.getElementById("btnDonation").innerHTML=="| DONATION")){
+            document.getElementById("menuTitle").innerHTML="DONATION";
+            document.getElementById("btnDonation").innerHTML="DONATION";
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+
+            window.location.replace("donation.html");
+        }
+        }
+        function LogoutHover(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnLogout").style.color= '#2c485f';
+            document.getElementById("btnLogout").innerHTML="| LOG OUT";
+            document.getElementById("btnLogout").style.cursor= 'pointer';
+        }
+            else{
+                document.getElementById("btnLogout").style.cursor= 'default';
+            }
+        }
+        function LogoutLeave(){
+            if(document.getElementById("btnHome").style.color=='white'){
+            document.getElementById("btnLogout").style.color= 'white';
+            document.getElementById("btnLogout").innerHTML="LOG OUT";
+            }
+        }
+        function LogoutClick(){}
+
+        function menuIconClick(){
+            if(document.getElementById("btnAbout").style.color!='white'){
+            document.getElementById("btnHome").style.color= 'white';
+            document.getElementById("btnAbout").style.color= 'white';
+            document.getElementById("btnAdmin").style.color= 'white';
+            document.getElementById("btnDirector").style.color= 'white';
+            document.getElementById("btnUsers").style.color= 'white';
+            document.getElementById("btnDoctor").style.color= 'white';
+            document.getElementById("btnLab").style.color= 'white';
+            document.getElementById("btnPharma").style.color= 'white';
+            document.getElementById("btnNurse").style.color= 'white';
+            document.getElementById("btnReck").style.color= 'white';
+            document.getElementById("btnDonation").style.color= 'white';
+            document.getElementById("btnHelp").style.color= 'white';
+            document.getElementById("btnLogout").style.color= 'white';
+            
+            }
+            else{
+            document.getElementById("btnHome").style.color= '#6e9ec5';
+            document.getElementById("btnAbout").style.color= '#6e9ec5';
+            document.getElementById("btnAdmin").style.color= '#6e9ec5';
+            document.getElementById("btnDirector").style.color= '#6e9ec5';
+            document.getElementById("btnUsers").style.color= '#6e9ec5';
+            document.getElementById("btnDoctor").style.color= '#6e9ec5';
+            document.getElementById("btnLab").style.color= '#6e9ec5';
+            document.getElementById("btnPharma").style.color= '#6e9ec5';
+            document.getElementById("btnNurse").style.color= '#6e9ec5';
+            document.getElementById("btnReck").style.color= '#6e9ec5';
+            document.getElementById("btnDonation").style.color= '#6e9ec5';
+            document.getElementById("btnHelp").style.color= '#6e9ec5';
+            document.getElementById("btnLogout").style.color= '#6e9ec5';
+            }
+        }
+    </script>
+</head>
+<body onload="load()">
+    <!--<h1>MAIRA CLINIC</h1>-->
+    <div class="grid-container">
+        <div class="item2">
+            
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 20px;cursor: pointer;font-size: 35px;margin-top: 13px;" class="menuIcon" id="menuIcon" onclick="menuIconClick()">≡</h2>
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 60px; margin-top: -62px;" id="menuTitle">HELP</h2>
+        <div class="menuList" id="menuList">
+        <h3 style=" text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="btnHome" onclick="HomeClick()" onmouseover="HomeHover()" onmouseleave="HomeLeave()">HOME</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnAbout" onclick="AboutClick()" onmouseover="AboutHover()" onmouseleave="AboutLeave()">ABOUT</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnAdmin" onclick="AdminClick()" onmouseover="AdminHover()" onmouseleave="AdminLeave()">ADMIN</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnDirector" onclick="DirectorClick()" onmouseover="DirectorHover()" onmouseleave="DirectorLeave()">DIRECTOR</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnUsers" onclick="UsersClick()" onmouseover="UsersHover()" onmouseleave="UsersLeave()">USERS</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnDoctor" onclick="DoctorClick()" onmouseover="DoctorHover()" onmouseleave="DoctorLeave()">DOCTOR</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnLab" onclick="LabClick()" onmouseover="LabHover()" onmouseleave="LabLeave()">LAB-TECH</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnPharma" onclick="PharmaClick()" onmouseover="PharmaHover()" onmouseleave="PharmaLeave()">PHARMACY</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnNurse" onclick="NurseClick()" onmouseover="NurseHover()" onmouseleave="NurseLeave()">NURSE</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnReck" onclick="ReckClick()" onmouseover="ReckHover()" onmouseleave="ReckLeave()">RECKONER</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnHelp" onclick="HelpClick()" onmouseover="HelpHover()" onmouseleave="HelpLeave()">HELP</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnDonation" onclick="DonationClick()" onmouseover="DonationHover()" onmouseleave="DonationLeave()">DONATION</h3>
+        <h3 style="text-align: left; margin-left: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;cursor: pointer;" id="btnLogout" onclick="LogoutClick()" onmouseover="LogoutHover()" onmouseleave="LogoutLeave()">LOG OUT</h3>
+        
+    </div>
+    <p style="font-size: 13px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;">By : Yosef Aregahegn</p>    
+    </div>
+        <div class="item3">
+            <h2 h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #547896;font-size: 25px;text-align: center;">HELP</h2>
+            <div class="ibody">
+            <p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>MAIRA CLINIC</b> software project is a very easy platform for an effective way of health care system. In order to get the best from the platform it is better to get to know with it first. The following tips will guid you on how to use the program properly.</p>
+            <ul>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">First all members must be registered or have to sign into the system.</p></li>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Registered members can get two kinds of services :</p></li>
+            <p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">✔ Treatment and</p>
+            <p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">✔ Checkup</p>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Both services have their own ways of accessing services.</p></li>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">In many pages of the program members' passwords are essentials to get into the system.</p></li>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Members have to be loyal and honest with the program.</p></li>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Required inputs must be filled by the members.</p></li>
+            <li><p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Payments have to be payed properly.</p></li>
+            </ul>
+            <p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Since the software is clinical based health care system, the system must be secured to prevent loss of patient's data and other related important data. The program has included many login pages. Those login pages need the right inputs to enable the user to pass to the next pages, so if the inputs are wrong the user won't be able to get into what he/she want.</p>
+            <p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For research and other purposes we have included different .pdf files that can import different data from the program. It will inhance the productivity of the program and also gives additional usage for other parts of the system including doctors, lab technichians, pharmacists, administors and others.</p>
+            <p style="text-align: justify;padding-left: 20px;padding-right: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">After having a service or a treatment and/or the medicine, the system will terminate the  case since there will be other patients on the way. Payments will be fully covered by the system as it is a commnity based insurance integrated clinic system but it doesn't mean that it is free. Paying the membership payment is a must for all members.</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
